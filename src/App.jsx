@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
-
+import './components/Header/Header'
+import './components/GifList/GifList'
 const App = () => {
   const [query, setQuery] = useState('');
   const [gifs, setGifs] = useState([]);
@@ -19,7 +20,7 @@ const App = () => {
 
   return (
     <div className="container">
-      <h1 className="title">Giphy Search</h1>
+      <div className='header'><h1 className="title">Pagina de gifs</h1></div>
       <div className="input-container">
         <input
           type="text"
