@@ -1,11 +1,17 @@
+
+
+
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background: linear-gradient(135deg, #2D2D2A 0%, white 100%);
+  
 }
 
 .container {
@@ -14,7 +20,7 @@ body {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 800px;
+  max-width: 60%;
   margin: 20px auto;
 }
 
@@ -23,7 +29,31 @@ body {
 }
 
 .title {
-  color: #333;
+text-align: left; 
+font-family: Arial Black; 
+font-weight: bold; font-size: 30px; 
+background: #202020; 
+-webkit-background-clip: text; 
+-moz-background-clip: text; 
+background-clip: text; 
+color: transparent; 
+text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3);
+text-align: center;
+font-size: 3rem;
+}
+
+.trending-gifs{
+  text-align: left; 
+font-family: Arial Black; 
+font-weight: bold; font-size: 30px; 
+background: #202020; 
+-webkit-background-clip: text; 
+-moz-background-clip: text; 
+background-clip: text; 
+color: transparent; 
+text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3);
+text-align: center;
+font-size: 2rem;
 }
 
 .input-container {
@@ -66,10 +96,15 @@ button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 .gifs-container img {
   max-width: 200px;
-  border-radius: 10px;
+  border-radius: 20px;
+}
+
+
+.searched-gifs > button{
+margin-top:30px ;
 }
