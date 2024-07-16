@@ -1,42 +1,75 @@
-.header{
-background-image: url(./public/images/welcome.gif);
-background-repeat: no-repeat;
-background-position: center center;
-background-size: 100% 100%;
-padding: 2rem;
-
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #2D2D2A 0%, white 100%);
 }
+
 .container {
-    text-align: center;
-  }
-  
-  .title {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  .input-container {
-    margin-bottom: 20px;
-  }
-  
-  input[type="text"] {
-    padding: 10px;
-    width: 300px;
-    font-size: 1rem;
-  }
-  
-  button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    margin-left: 10px;
-    cursor: pointer;
-  }
-  
-  .gifs-container {
-    margin-top: 20px;
-  }
-  
-  .gifs-container img {
-    margin: 10px;
-  }
-  
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.title {
+  color: #333;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 300px;
+  border: 2px solid #2D2D2A;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #9B9B9B;
+}
+
+button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  background-color: #2D2D2A;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #9B9B9B;
+  color:white;
+}
+
+.gifs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.gifs-container img {
+  max-width: 200px;
+  border-radius: 10px;
+}
