@@ -57,7 +57,6 @@ const App = () => {
     <div className="container">
       <div className="header">
         <h1 className="title">Página de GIFs</h1>
-        <img src="./public/images/pato.gif" alt="GIF header" />
       </div>
 
       <div className="input-container">
